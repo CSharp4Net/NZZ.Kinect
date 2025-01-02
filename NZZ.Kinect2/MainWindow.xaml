@@ -1,0 +1,17 @@
+﻿<Window x:Class="NZZ.Kinect2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="800" Width="1200" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="450" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Name="LblSpieler1" FontFamily="Courier New" FontSize="28" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Spieler</Label>        
+        <Canvas Grid.Row="1" Width="600" Height="450" Name="CanvasSpieler1" Background="Black" ClipToBounds="True" />
+    </Grid>
+</Window>

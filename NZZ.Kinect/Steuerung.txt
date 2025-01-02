@@ -1,0 +1,44 @@
+﻿Nach vorne laufen:
+1. Fuß-Rechts befindet sich vor:
+- Hüfte-Zentrum
+- Fuß-Links
+2. Fuß-Links befindet sich neben:
+- Hüfte-zentrum
+
+Nach Hinten laufen:
+1. Fuß Links befindet sich hinter:
+- Hüfte-Zentrum
+- Fuß-Rechts
+2. Fuß-Rechts befindet sich neben:
+- Hüfte-Zentrum
+
+Nach Rechts laufen:
+1. Fuß Links befindet sich rechts von:
+- Hüfte-Links
+2. Fuß-Rechts befindet sich unter:
+- Hüfte-Rechts
+
+Nach Links laufen:
+1. Fuß-Rechts befindet sich links von:
+- Hüfte-Rechts
+2. Fuß-Links befindet sich unter:
+- Hüfte-Links
+
+Nach links schauen:
+1. Schulter-Links befindet sich links von:
+- Becken-Links
+
+Nach rechts schauen
+1. Schulter-Rechts befindet sich rechts von:
+- Becken-Rechts
+
+Nach unten schauen:
+1. Kopf befindet befindet sich vor:
+- Becken-Zentrum
+
+Nach oben schauen:
+1. Kopf befindet sich hinter:
+- Becken-Zentrum
+
+Ducken:
+1. Becken befindet sich unter 0

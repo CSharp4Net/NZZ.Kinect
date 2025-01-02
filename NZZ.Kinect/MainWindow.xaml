@@ -1,0 +1,161 @@
+﻿<Window xmlns:my="clr-namespace:NZZ.Kinect"  x:Class="NZZ.Kinect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="800" Width="1200" Loaded="Window_Loaded" Closed="Window_Closed" FontWeight="Bold" FontSize="28" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition  />
+            <RowDefinition  Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Button Name="ButtonConnect" Grid.Row="0" Grid.Column="0" Content="Start"  Click="ButtonConnect_Click" />
+        <Button Name="ButtonDisconnect" Grid.Row="0" Grid.Column="1" Content="Stop"  Click="ButtonDisconnect_Click" />
+
+        <TextBox Name="TextBoxLog" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Background="#15000000" FontSize="12" FontWeight="Normal" />
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="99" Visibility="Hidden" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <Grid Name="GridWithRightJoints" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="75" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                </Grid.RowDefinitions>
+
+                <Label Content="Körperteil" Grid.Row="0" Grid.Column="0" />
+                <Label Content="Left" Grid.Row="0" Grid.Column="1" />
+                <Label Content="Höhe" Grid.Row="0" Grid.Column="2" />
+                <Label Content="Entfernung" Grid.Row="0" Grid.Column="3" />
+                <Label Content="Person" Grid.Row="0" Grid.Column="4" />
+
+                <my:TextBoxWithJoint x:Name="TbJointHeadRight" Grid.Row="1" Grid.ColumnSpan="99" HoldedJoint="Head" />
+                <my:TextBoxWithJoint x:Name="TbJointShoulderCenterRight"  Grid.Row="2" Grid.ColumnSpan="99" HoldedJoint="ShoulderCenter" />
+                <my:TextBoxWithJoint x:Name="TbJointShoulderRight" Grid.Row="3" Grid.ColumnSpan="99" HoldedJoint="ShoulderRight" />
+                <my:TextBoxWithJoint x:Name="TbJointElbowRight" Grid.Row="4" Grid.ColumnSpan="99" HoldedJoint="ElbowRight" />
+                <my:TextBoxWithJoint x:Name="TbJointWristRight" Grid.Row="5" Grid.ColumnSpan="99" HoldedJoint="WristRight" />
+                <my:TextBoxWithJoint x:Name="TbJointHandRight" Grid.Row="6" Grid.ColumnSpan="99" HoldedJoint="HandRight" />
+                <my:TextBoxWithJoint  x:Name="TbJointHipCenterRight" Grid.Row="7" Grid.ColumnSpan="99" HoldedJoint="HipCenter" />
+                <my:TextBoxWithJoint x:Name="TbJointHipRight" Grid.Row="8" Grid.ColumnSpan="99" HoldedJoint="HipRight" />
+                <my:TextBoxWithJoint x:Name="TbJointKneeRight" Grid.Row="9" Grid.ColumnSpan="99" HoldedJoint="KneeRight" />
+                <my:TextBoxWithJoint x:Name="TbJointAnkleRight" Grid.Row="10" Grid.ColumnSpan="99" HoldedJoint="AnkleRight" />
+                <my:TextBoxWithJoint x:Name="TbJointFootRight" Grid.Row="11" Grid.ColumnSpan="99" HoldedJoint="FootRight" />
+            </Grid>
+            
+            <Grid Name="GridWithLeftJoints" Grid.Row="0" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="75" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="38" />
+                </Grid.RowDefinitions>
+
+                <Label Content="Körperteil" Grid.Row="0" Grid.Column="0" />
+                <Label Content="Left" Grid.Row="0" Grid.Column="1" />
+                <Label Content="Höhe" Grid.Row="0" Grid.Column="2" />
+                <Label Content="Entfernung" Grid.Row="0" Grid.Column="3" />
+                <Label Content="Person" Grid.Row="0" Grid.Column="4" />
+
+                <my:TextBoxWithJoint x:Name="TbJointHeadLeft" Grid.Row="1" Grid.ColumnSpan="99" HoldedJoint="Head" />
+                <my:TextBoxWithJoint x:Name="TbJointShoulderCenterLeft"  Grid.Row="2" Grid.ColumnSpan="99" HoldedJoint="ShoulderCenter" />
+                <my:TextBoxWithJoint x:Name="TbJointShoulderLeft" Grid.Row="3" Grid.ColumnSpan="99" HoldedJoint="ShoulderLeft" />
+                <my:TextBoxWithJoint x:Name="TbJointElbowLeft" Grid.Row="4" Grid.ColumnSpan="99" HoldedJoint="ElbowLeft" />
+                <my:TextBoxWithJoint x:Name="TbJointWristLeft" Grid.Row="5" Grid.ColumnSpan="99" HoldedJoint="WristLeft" />
+                <my:TextBoxWithJoint x:Name="TbJointHandLeft" Grid.Row="6" Grid.ColumnSpan="99" HoldedJoint="HandLeft" />
+                <my:TextBoxWithJoint  x:Name="TbJointHipCenterLeft" Grid.Row="7" Grid.ColumnSpan="99" HoldedJoint="HipCenter" />
+                <my:TextBoxWithJoint x:Name="TbJointHipLeft" Grid.Row="8" Grid.ColumnSpan="99" HoldedJoint="HipLeft" />
+                <my:TextBoxWithJoint x:Name="TbJointKneeLeft" Grid.Row="9" Grid.ColumnSpan="99" HoldedJoint="KneeLeft" />
+                <my:TextBoxWithJoint x:Name="TbJointAnkleLeft" Grid.Row="10" Grid.ColumnSpan="99" HoldedJoint="AnkleLeft" />
+                <my:TextBoxWithJoint x:Name="TbJointFootLeft" Grid.Row="11" Grid.ColumnSpan="99" HoldedJoint="FootLeft" />
+            </Grid>
+        </Grid>
+        
+        <Canvas Grid.Row="2" Grid.ColumnSpan="2" Width="600" Height="450" Name="skeletonCanvas" Background="Black" ClipToBounds="True" />
+        
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="99" >
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions >
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <TextBox Grid.Row="0" Grid.Column="0" Name="TextBoxMoveForward" Text="Lauf:Vor" />
+            <TextBox Grid.Row="1" Grid.Column="0" Name="TextBoxMoveBack" Text="Lauf:Zurück" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="TextBoxMoveLeft" Text="Lauf:Links" />
+            <TextBox Grid.Row="1" Grid.Column="1" Name="TextBoxMoveRight" Text="Lauf:Rechts" />
+
+            <TextBox Grid.Row="0" Grid.Column="2" Name="TextBoxLookUp" Text="Sicht:Auf" />
+            <TextBox Grid.Row="1" Grid.Column="2" Name="TextBoxLookDown" Text="Sicht:Ab" />
+            <TextBox Grid.Row="0" Grid.Column="3" Name="TextBoxLookRight" Text="Sicht:Links" />
+            <TextBox Grid.Row="1" Grid.Column="3" Name="TextBoxLookleft" Text="Sicht:Rechts" />
+        </Grid>
+    </Grid>
+</Window>

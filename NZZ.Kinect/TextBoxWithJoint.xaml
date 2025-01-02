@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="NZZ.Kinect.TextBoxWithJoint"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="75" />
+        </Grid.ColumnDefinitions>
+        
+        <Label Name="LabelJointName" Padding="2" />
+        <TextBox Name="TextBoxJointX" Grid.Column="1" />
+        <TextBox Name="TextBoxJointY" Grid.Column="2" />
+        <TextBox Name="TextBoxJointZ" Grid.Column="3" />
+        <TextBox Name="TextBoxJointW" Grid.Column="4" />
+    </Grid>
+</UserControl>
