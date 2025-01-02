@@ -1,0 +1,12 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/NZZ.Kinect/bin/Debug
+/.vs
+/NZZ.Kinect/obj/x86
+/NZZ.Kinect/NZZ.Kinect.csproj.user
+/NZZ.Kinect2/bin/Debug
+/NZZ.Kinect2/obj/x86
+/NZZ.Kinect2/NZZ.Kinect2.csproj.user
+/NZZ.Kinect.suo
